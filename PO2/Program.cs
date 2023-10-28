@@ -660,16 +660,6 @@ namespace main
         }
         public static void task15()
         {
-            /*int[] coins = { 1, 2, 5 };
-            List<int> temp = new List<int> { };
-            foreach (int[] v in Sup.GetCombinations(coins, 10, temp))
-            {
-                foreach (int x in v)
-                {
-                    Console.Write("{0}, ", x);
-                }
-                Console.WriteLine();
-            }*/
             for (int z1 = 0; z1 <= 10; z1++)
                 for (int z2 = 0; z2 <= 5; z2++)
                     for (int z5 = 0; z5 <= 2; z5++)
@@ -718,28 +708,5 @@ namespace main
         {
             Console.WriteLine("Answer to the question is inside the code.");
         }
-        /*public static IEnumerable<int[]> GetCombinations(int[] set, int sum, List<int> prev)
-        {
-            for (int i = 0; i < set.Length; i++)
-            {
-                int left = sum - set[i];
-                List<int> rest = new List<int>();
-                rest.Add(set[i]);
-                rest.AddRange(prev);
-                int[] ret = rest.ToArray();
-                if (left == 0)
-                {
-                   
-                    yield return ret;
-                }
-                else
-                {
-                    foreach (int[] val in GetCombinations(set, left, rest))
-                    {
-                        yield return val;
-                    }
-                }
-            }
-        }*/
     }
 }
